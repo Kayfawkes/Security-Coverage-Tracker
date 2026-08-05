@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security Coverage Tracker</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div id="login" class="center card"><h1>Security Coverage Tracker</h1><p>Local-first security coverage management.</p><form id="loginForm"><input name="username" placeholder="Username" value="admin"><input type="password" name="password" placeholder="Password" value="ChangeMe123!"><button>Sign in</button></form><p class="muted">Default: admin / ChangeMe123! — change before production use.</p><div id="loginError" class="error"></div></div>
+<div id="app" class="hidden"><aside><h2>SCT</h2><button data-view="dashboard">Dashboard</button><button data-view="assets">Assets</button><button data-view="controls">Control Sets</button><button data-view="coverage">Coverage</button><button data-view="imports">Imports</button><div class="spacer"></div><span id="who"></span><button id="logout">Log out</button></aside>
+<main><header><h1 id="title">Dashboard</h1></header><section id="content"></section></main></div>
+<script src="/static/app.js"></script></body></html>
